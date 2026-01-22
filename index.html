@@ -29,6 +29,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
+            background: #0a0a0f;
         }
 
         .container {
@@ -275,6 +276,8 @@
 
         function draw() {
             // Clear canvas completely (no trails)
+            ctx.globalAlpha = 1;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = '#0a0a0f';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
